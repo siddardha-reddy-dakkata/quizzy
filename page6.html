@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzy</title>
+    <link rel="icon"  href="myLogo.png" type="image/icon type">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="page6.css">
+</head>
+<body>
+    <div class="container">
+        <div class="waviy" data-aos="zoom-in" data-aos-duration="">
+            <span class="letter1">L</span>
+            <span class="letter2">o</span>
+            <span class="letter3">a</span>
+            <span class="letter4">d</span>
+            <span class="letter5">i</span>
+            <span class="letter6">n</span> 
+            <span class="letter7">g</span>
+            <span class="letter8">.</span>
+        </div>
+        <div class="center" >
+            <div class="topic" ><h1 class="topic_heading" data-aos="zoom-in"></h1></div>
+            <div class="section1" >
+                <div class="section1_left">
+                    <div class="dynamiccolor"></div>
+                    <div class="questions"><h3 class="questions_heading1" ></h3></div>
+                    <div class="option">
+                        <table cellspacing="50px">
+                            <tr>
+                                <td><span class="spacing"><input type="radio" name="option" class="radioButton"  style="height:27px; width:27px; vertical-align: sub;"  id="1" onclick="Selected(id)"></span><span class="Spacing" ></span></td>
+
+                                <td><span class="spacing"><input type="radio" name="option" style="height:27px; width:27px; vertical-align: sub;"  id="2" onclick="Selected(id)"></span><span class="Spacing" ></span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="spacing"><input type="radio" name="option" style="height:27px; width:27px; vertical-align: sub; " id="3" onclick="Selected(id)"></span><span class="Spacing" ></span></td>
+                                <td><span class="spacing"><input type="radio" name="option" style="height:27px; width:27px; vertical-align: sub; " id="4" onclick="Selected(id)"></span><span class="Spacing" ></span></td>
+                            </tr>
+                        </table>
+                    </div>
+                   
+                    <div class="lower">
+                        <!-- <div><button class="btn" ><i class="fa-solid fa-backward" style="color: #ffffff;"></i>Previous</button></div> -->
+                        <!-- <button class="btn" onclick="Check_Answer()">Check Answer</button> -->
+                        <div><button class="btn1" >Next<i class="fa-solid fa-forward" style="color: #fafafa;"></i></button></div>
+                        <div><button class="btn2">Submit</button></div>
+                    </div>
+                </div>
+                <div class="section1_right" >
+                    <div class="dynamiccolor1"></div>
+                    <div class="section1_top">
+                        <div class="clock" >
+                            <div class="clock_second" style="color: white;"><span>60</span></div>
+                            <svg>
+                                <circle cx="50" cy="50" r="44" id="second"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="section1_bottom">
+                        <div class="section1_bottom_1" >
+                            <img src="page6Img.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="page6.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module">AOS.init({
+         startEvent: 'DOMContentLoaded',
+         anchorPlacement: 'top-bottom',
+         once:true
+    });</script>
+  
+</body>
+</html>

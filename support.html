@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Quizzy</title>
+    <link rel="icon"  href="myLogo.png" type="image/icon type">
+
+    <link rel="stylesheet" href="./support.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&family=Rubik+Bubbles&family=Tiny5&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="support-container">
+        
+        <div class="support-main">
+            <div class="menu">
+                <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="show('container')"></i>
+                <div class="container">
+                    <a href="page2.html" class="p">Home</a>
+                    <a href="team.html" class="p">About Us</a>
+                    <a href="contact.html" class="p">Contact</a>
+                    <a href="support.html" class="p">Help</a>
+                    <a href="page1.html" class="p" onclick="redirectToLogin()">Logout</a>
+                    <div class="p" onclick="hide('container')">Close</div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="logo-space"> 
+                    <img src="./log0-removebg-preview.png" alt="">
+                </div> 
+                <div class="nav-space">
+                    <div class="nav-bar">
+                        <div class="nav-items"><a href="page2.html">HOME</a></div>
+                        <div class="nav-items"><a href="team.html">ABOUT US</a></div>
+                        <div class="nav-items"><a href="contact.html">CONTACT</a></div>
+                        <div class="nav-items"><a href="support.html">HELP</a></div>
+                        <!-- <div id="welcome" onclick="appearLogin()">LOGIN</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="subject">
+                <div class="subject-heading" >
+                    <h1>Help Center</h1>
+                </div> 
+                <div class="subject-info">
+                    <div class="subject-faq">
+                        <h2 class="freqAQ">Frequently Asked Questions</h2>
+                        <div class="faq-item">
+                            <h3 onclick="showAnswer(0)">How to create an account?</h3>
+                            <p class="answer">To create an account, go to  the signup page provide the required details and click the sign up button.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 onclick="showAnswer(1)">How do I contact customer support?</h3>
+                            <p class="answer">You can contact customer support by filling out the contact form below or by calling our support number at +91 987654321</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 onclick="showAnswer(2)">How can I score more?</h3>
+                            <p class="answer">Learn more, practice more. Being consistent towards learning will make you improve no matter what.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 onclick="showAnswer(3)">What is the use of this website?</h3>
+                            <p class="answer">Our website provides a platform for people to test their knowledge and to practice along with learning</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 onclick="showAnswer(4)">Where should I learn  to perform well?</h3>
+                            <p class="answer">We are on the way to integrate a learning platform too. we will release the new update soon.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 onclick="showAnswer(5)">How many topics are you offering?</h3>
+                            <p class="answer">As you can see in the topics section, there are six different topics like nature, CS, mathematics etc...</p>
+                        </div>
+                    </div>
+                    <div class="subject-form">
+                        <h2 style="margin: 30px; padding: 0; justify-content: flex-start;">Query Form</h2>
+                        <table>
+                            <tr class="fields">
+                                <td><label for="username">username:</label></td>
+                                <td><input type="text" class="inputFields"></td>
+                            </tr>
+                            <tr class="fields">
+                                <td><label for="username">Email:</label></td> 
+                                <td><input type="text" class="inputFields"></td>
+                            </tr>
+                            <tr class="fields">
+                                <td><label for="username" >Description:</label></td>
+                                <td><textarea name="" cols="27" rows="1" style="border-radius: 10px; outline: none; background-color: transparent; color:aliceblue; font-family: 'Times New Roman', Times, serif; "></textarea></td>
+                                <!-- <td><input type="text" class="inputFields"></td> -->
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button type="button" onclick="clearAll()">Submit</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="support.js"></script>
+</body>
+</html>

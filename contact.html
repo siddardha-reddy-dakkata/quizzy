@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz</title>
+    <link rel="icon"  href="myLogo.png" type="image/icon type">
+
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="container">
+
+            <div class="header">
+                <div class="logo-space">
+                    <img src="log0-removebg-preview.png" alt="">
+                </div>
+                <div class="nav-space">
+                    <div class="nav-bar">
+                        <div class="nav-items"><a href="page2.html">HOME</a></div>
+                        <div class="nav-items"><a href="team.html">ABOUT US</a></div>
+                        <div class="nav-items"><a href="contact.html">CONTACT</a></div>
+                        <div class="nav-items"><a href="support.html">HELP</a></div>
+                        <!-- <div id="welcome" onclick="appearLogin()">LOGIN</div> -->
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="show('menuContainer')"></i>
+                    <div class="menuContainer">
+                        <a href="page2.html" class="p">Home</a>
+                        <a href="team.html" class="p">About Us</a>
+                        <a href="contact.html" class="p">Contact</a>
+                        <a href="support.html" class="p">Help</a>
+                        <a href="page1.html" class="p" onclick="redirectToLogin()">Logout</a>
+                        <div class="p" onclick="hide('menuContainer')">Close</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="heading">
+                <h1>Contact Us</h1>
+            </div>
+
+            <div class="myContent">
+                <div class="left">
+                    <div class="tagline">Feel free to get in touch with me. I am always open to discussing how to reach
+                        out to us, explore Quizizz in your state, help us with translations, and report inappropriate
+                        content.</div>
+
+
+                    <div class="social">
+                        <div class="socialChild">
+                            <div class="socialIcon" c><i class="fa-solid fa-envelope" style="color: #E11D48;"></i></div>
+                            <div class="socialText1">Mail us</div>
+                            <div class="socialText2">info@mail.com</div>
+                        </div>
+                        <div class="socialChild">
+                            <div class="socialIcon"><i class="fa-solid fa-phone" style="color: #E11D48;"></i></div>
+                            <div class="socialText1">Call us</div>
+                            <div class="socialText2">+91 9876543210</div>
+                        </div>
+                        <div class="socialChild">
+                            <div class="socialIcon"><i class="fa-brands fa-linkedin" style="color: #E11D48;"></i></div>
+                            <div class="socialText1">Message us</div>
+                            <div class="socialText2">Quiz App</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="right">
+                    <input class="contact_name" type="text" placeholder="Enter your name" /><br></center>
+                    <input class="contact_email" type="email" placeholder="Enter a valid email Address" /><br>
+                    <!-- <input class="contact_address" type="text" placeholder="Enter your message" /><br> -->
+                     <textarea class="contact_address" placeholder="Enter your Message"></textarea>
+                    <center><input class="contact_submit" type="submit" onclick="clearAll()" /></center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="contact.js"></script>
+</body>
+
+</html>

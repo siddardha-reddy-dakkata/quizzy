@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzy</title>
+    <link rel="stylesheet" href="page2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&family=Rubik+Bubbles&family=Tiny5&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon"  href="myLogo.png" type="image/icon type">
+</head>
+
+
+<body> 
+    <div class="p2">
+        <div class="menu">
+            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="show('container')"></i>
+            <div class="container">
+                <a href="page2.html" class="p">Home</a>
+                <a href="team.html" class="p">About Us</a>
+                <a href="contact.html" class="p">Contact</a>
+                <a href="support.html" class="p">Help</a>
+                <a href="page1.html" class="p" onclick="redirectToLogin()">Logout</a>
+                <div class="p" onclick="hide('container')">Close</div>
+            </div>
+        </div>
+        <div class="p2a">
+            <div class="logo"><img src="./logo.jfif" height="90px" width="190px"></div>
+            <div class="nbar">
+                <a href="page2.html" class="a">Home</a>
+                <a href="team.html" class="a">About Us</a>
+                <a href="contact.html" class="a">Contact</a>
+                <a href="support.html" class="a">Help</a>
+                <a href="page1.html" class="a">Logout</a>
+            </div>
+            <!-- <div class="menu">
+                <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="show('container')"></i>
+                <div class="container">
+                    <a href="page2.html" class="p">Home</a>
+                    <a href="team.html" class="p">About Us</a>
+                    <a href="contact.html" class="p">Contact</a>
+                    <a href="support.html" class="p">Support</a>
+                    <a href="page1.html" class="p" onclick="redirectToLogin()">Logout</a>
+                    <div class="p" onclick="hide('container')">Close</div>
+                </div>
+            </div> -->
+        </div>
+        <div class="welcomeUser" style="color: white; animation-name: anime3;animation-duration: 1.5s;font-size: 22px;font-weight: bold;margin-top: 27px;
+        margin-left: 66px;">Welcome User :)</div>
+        <div class="titleContainer">
+            <div class="p2b">
+                <div class="he">
+                    <center>
+                        <p class="myPTag">QUIZ TIME</p> 
+                    </center> 
+                    <div class="sl">
+                        <center>
+                            <h6>It's Time To Test Your Knowledge !</h6> 
+                        </center>
+                    </div>
+                </div>
+                <!-- <div class="sl"><h6>Time To Test Your Knowledge !</h6></div> -->
+            </div>
+            <div class="but">
+                <a href="page3.html"><button style="cursor: pointer;">TOPICS</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="./page2.js"></script>
+</body>
+
+</html>
